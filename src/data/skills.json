@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "skillName": "MongoDB",
+        "bgColor": "bg-green-400",
+        "textColor": "text-green-800"
+    },
+    {
+        "id": 2,
+        "skillName": "Express",
+        "bgColor": "bg-gray-400",
+        "textColor": "text-gray-200"
+    },
+    {
+        "id": 3,
+        "skillName": "React",
+        "bgColor": "bg-blue-400",
+        "textColor": "text-blue-800"
+    },
+    {
+        "id": 4,
+        "skillName": "Node.js",
+        "bgColor": "bg-green-400",
+        "textColor": "text-green-800"
+    },
+    {
+        "id": 5,
+        "skillName": "Java",
+        "bgColor": "bg-orange-400",
+        "textColor": "text-orange-800"
+    },
+    {
+        "id": 6,
+        "skillName": "C++",
+        "bgColor": "bg-purple-400",
+        "textColor": "text-purple-800"
+    },
+    {
+        "id": 7,
+        "skillName": "Python",
+        "bgColor": "bg-yellow-400",
+        "textColor": "text-yellow-800"
+    },
+    {
+        "id": 8,
+        "skillName": "Scala",
+        "bgColor": "bg-red-400",
+        "textColor": "text-red-200"
+    },
+    {
+        "id": 9,
+        "skillName": "MySQL",
+        "bgColor": "bg-blue-400",
+        "textColor": "text-blue-800"
+    },
+    {
+        "id": 10,
+        "skillName": "Figma",
+        "bgColor": "bg-pink-400",
+        "textColor": "text-pink-800"
+    },
+    {
+        "id": 11,
+        "skillName": "Git",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 12,
+        "skillName": "Github",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 12,
+        "skillName": "Tailwind",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 13,
+        "skillName": "Redux",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 14,
+        "skillName": "Vanilla JS",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 15,
+        "skillName": "Apache POI",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    },
+    {
+        "id": 16,
+        "skillName": "Material-UI",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+    }
+]
