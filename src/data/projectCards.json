@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "projectName" : "Renaissance",
+        "projectDescription": "A project",
+        "imgSrc": "/assets/project-cards/renaissance.png",
+        "techStack": ["React", "MongoDB", "Express", "Mongoose", "Tailwind"],
+        "liveLink": [""],
+        "repoLink": [""]
+    },
+    {
+        "id": 2,
+        "projectName" : "Excel-To-Insight",
+        "projectDescription": "A project",
+        "imgSrc": "/assets/project-cards/renaissance.png",
+        "techStack": ["Scala", "Apache POI", "XChart"],
+        "liveLink": [""],
+        "repoLink": [""]
+    },
+    {
+        "id": 3,
+        "projectName" : "Space-Surge",
+        "projectDescription": "A project",
+        "imgSrc": "/assets/project-cards/space-surge.png",
+        "techStack": ["JavaScript", "CSS", "HTML"],
+        "liveLink": [""],
+        "repoLink": [""]
+    }
+]
