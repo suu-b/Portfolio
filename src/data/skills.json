@@ -2,103 +2,148 @@
     {
         "id": 1,
         "skillName": "MongoDB",
-        "bgColor": "bg-green-400",
-        "textColor": "text-green-800"
+        "bgColor": "bg-green-100",
+        "textColor": "text-green-800",
+        "borderColor": "border-green-500"
     },
     {
         "id": 2,
         "skillName": "Express",
-        "bgColor": "bg-gray-400",
-        "textColor": "text-gray-200"
+        "bgColor": "bg-gray-100",
+        "textColor": "text-gray-800",
+        "borderColor": "border-gray-500"
     },
     {
         "id": 3,
         "skillName": "React",
-        "bgColor": "bg-blue-400",
-        "textColor": "text-blue-800"
+        "bgColor": "bg-blue-100",
+        "textColor": "text-blue-800",
+        "borderColor": "border-blue-500"
     },
     {
         "id": 4,
         "skillName": "Node.js",
-        "bgColor": "bg-green-400",
-        "textColor": "text-green-800"
+        "bgColor": "bg-green-100",
+        "textColor": "text-green-800",
+        "borderColor": "border-green-500"
     },
     {
         "id": 5,
         "skillName": "Java",
-        "bgColor": "bg-orange-400",
-        "textColor": "text-orange-800"
+        "bgColor": "bg-orange-100",
+        "textColor": "text-orange-800",
+        "borderColor": "border-orange-500"
     },
     {
         "id": 6,
         "skillName": "C++",
-        "bgColor": "bg-purple-400",
-        "textColor": "text-purple-800"
+        "bgColor": "bg-purple-100",
+        "textColor": "text-purple-800",
+        "borderColor": "border-purple-500"
     },
     {
         "id": 7,
         "skillName": "Python",
-        "bgColor": "bg-yellow-400",
-        "textColor": "text-yellow-800"
+        "bgColor": "bg-yellow-100",
+        "textColor": "text-yellow-800",
+        "borderColor": "border-yellow-500"
     },
     {
         "id": 8,
         "skillName": "Scala",
-        "bgColor": "bg-red-400",
-        "textColor": "text-red-200"
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800",
+        "borderColor": "border-red-500"
     },
     {
         "id": 9,
         "skillName": "MySQL",
-        "bgColor": "bg-blue-400",
-        "textColor": "text-blue-800"
+        "bgColor": "bg-blue-100",
+        "textColor": "text-blue-800",
+        "borderColor": "border-blue-500"
     },
     {
         "id": 10,
         "skillName": "Figma",
-        "bgColor": "bg-pink-400",
-        "textColor": "text-pink-800"
+        "bgColor": "bg-pink-100",
+        "textColor": "text-pink-800",
+        "borderColor": "border-pink-500"
     },
     {
         "id": 11,
         "skillName": "Git",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+        "bgColor": "bg-green-100",
+        "textColor": "text-green-800",
+        "borderColor": "border-green-500"
     },
     {
         "id": 12,
         "skillName": "Github",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
-    },
-    {
-        "id": 12,
-        "skillName": "Tailwind",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+         "bgColor": "bg-blue-100",
+        "textColor": "text-blue-800",
+        "borderColor": "border-blue-500"
     },
     {
         "id": 13,
-        "skillName": "Redux",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+        "skillName": "Tailwind",
+        "bgColor": "bg-purple-100",
+        "textColor": "text-purple-800",
+        "borderColor": "border-purple-500"
     },
     {
         "id": 14,
-        "skillName": "Vanilla JS",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+        "skillName": "Redux",
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800",
+        "borderColor": "border-red-500"
     },
     {
         "id": 15,
-        "skillName": "Apache POI",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+        "skillName": "Vanilla JS",
+        "bgColor": "bg-yellow-100",
+        "textColor": "text-yellow-800",
+        "borderColor": "border-yellow-500"
     },
     {
         "id": 16,
+        "skillName": "Apache POI",
+        "bgColor": "bg-orange-100",
+        "textColor": "text-orange-800",
+        "borderColor": "border-orange-500"
+    },
+    {
+        "id": 17,
         "skillName": "Material-UI",
-        "bgColor": "bg-black",
-        "textColor": "text-white"
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800",
+        "borderColor": "border-red-500"
+    },
+    {
+        "id": 18,
+        "skillName": "Mongoose",
+        "bgColor": "bg-purple-100",
+        "textColor": "text-purple-800",
+        "borderColor": "border-purple-500"
+    },
+    {
+        "id": 19,
+        "skillName": "XChart",
+        "bgColor": "bg-orange-100",
+        "textColor": "text-orange-800",
+        "borderColor": "border-orange-500"
+    },
+    {
+        "id": 20,
+        "skillName": "HTML",
+        "bgColor": "bg-red-100",
+        "textColor": "text-red-800",
+        "borderColor": "border-red-500"
+    },
+    {
+        "id": 21,
+        "skillName": "CSS",
+        "bgColor": "bg-yellow-100",
+        "textColor": "text-yellow-800",
+        "borderColor": "border-yellow-500"
     }
 ]
