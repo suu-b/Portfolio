@@ -21,6 +21,6 @@ export default function DarkModeToggle() {
     }, [darkMode])
 
     return (
-        <button className="fixed top-5 left-5 p-3 shadow bg-slate-100 border border-slate-200 dark:border-slate-900 dark:bg-slate-900 text-slate-800 dark:text-white rounded" onClick={() => setDarkMode(!darkMode)}>{darkMode ? <FaSun size={30} /> : <IoMoon size={30} />}</button>
+        <button className="lg:fixed flex-end self-start top-5 left-5 p-3 shadow bg-slate-100 border border-slate-200 dark:border-slate-900 dark:bg-slate-900 text-slate-800 dark:text-white rounded" onClick={() => setDarkMode(!darkMode)}>{darkMode ? <FaSun size={30} /> : <IoMoon size={30} />}</button>
     )
 }
