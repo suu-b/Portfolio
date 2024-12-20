@@ -1,12 +1,23 @@
 import Projects from "./sections/Projects"
-import React from "react"
+import React, { useState } from "react"
 import profileImage from "/assets/profile.jpg"
 import Introduction from "./sections/Introduction"
 import Skills from "./sections/Skills"
 import Contacts from "./sections/Contacts"
 import DarkModeToggle from "./components/DarkModeToggle"
+import axios from 'axios'
 
 function App() {
+  const fetchLanguageData = () => {
+    axios.get("http://localhost:8080/api")
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error))
+  }
+  
+  useState(() => {
+    fetchLanguageData()
+  }, [])
+
   return (
     <div className="bg-slate-100 dark:bg-slate-800 flex flex-col justify-center items-center p-3 lg:py-8">
       <DarkModeToggle />
