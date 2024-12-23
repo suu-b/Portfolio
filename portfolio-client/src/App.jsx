@@ -6,18 +6,9 @@ import Skills from "./sections/Skills"
 import Contacts from "./sections/Contacts"
 import DarkModeToggle from "./components/DarkModeToggle"
 import axios from 'axios'
+import { Stats } from "./sections/Stats"
 
 function App() {
-  const fetchLanguageData = () => {
-    axios.get("http://localhost:8080/api")
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error))
-  }
-  
-  useState(() => {
-    fetchLanguageData()
-  }, [])
-
   return (
     <div className="bg-slate-100 dark:bg-slate-800 flex flex-col justify-center items-center p-3 lg:py-8">
       <DarkModeToggle />
@@ -28,6 +19,8 @@ function App() {
         <Skills />
         <hr className="my-5 border-slate-300 dark:border-slate-600" />
         <Projects />
+        <hr className="my-5 border-slate-300 dark:border-slate-600" />
+        <Stats />
         <hr className="my-5 border-slate-300 dark:border-slate-600" />
         <Contacts />
         <hr className="my-5 border-slate-300 dark:border-slate-600" />

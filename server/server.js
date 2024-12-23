@@ -8,8 +8,9 @@ require('dotenv').config()
 
 const username = process.env.GITHUB_USERNAME
 const token = process.env.GITHUB_TOKEN
+const filePath = path.join(__dirname, 'data', 'data.json')
 
-const fetchAndCacheLanguages = async () => {
+const fetchRepos = async () => {
     try {
         let page = 1
         let repos = []
@@ -24,6 +25,17 @@ const fetchAndCacheLanguages = async () => {
             hasMoreRepos = response.data.length === 100
             page++
         }
+        return repos
+    }
+    catch (e) {
+        console.log("ERROR: Fetching repositories:" + e)
+        return []
+    }
+}
+
+const fetchAndCacheLanguages = async () => {
+    try {
+        const repos = await fetchRepos()
         const languages = {}
         for (let repo of repos) {
             const languagesResponse = await axios.get(repo.languages_url, { headers: { 'Authorization': `token ${token}` } })
@@ -32,8 +44,68 @@ const fetchAndCacheLanguages = async () => {
                 languages[language] = (languages[language] || 0) + amt
             }
         }
-        fs.writeFileSync(path.join(__dirname, 'data', 'data.json'), JSON.stringify(languages, null, 2))
-        console.log("Data cached successfully.")
+        let existingData = {}
+        if (fs.existsSync(filePath)) {
+            existingData = JSON.parse(fs.readFileSync(filePath))
+        }
+        existingData.languages = languages
+        fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2))
+        console.log("SUCCESS: Language Data written.")
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const fetchAndCacheOrgsPRDetails = async () => {
+    try {
+        const repos = await fetchRepos()
+        let totalPersonalPRs = 0
+        for (let repo of repos) {
+            const response = await axios.get(`https://api.github.com/repos/${username}/${repo.name}/pulls?state=all`, { headers: { 'Authorization': `token ${token}` } })
+            totalPersonalPRs += response.data.length
+        }
+        let existingData = {}
+        if (fs.existsSync(filePath)) {
+            existingData = JSON.parse(fs.readFileSync(filePath))
+        }
+        existingData.totalPersonalPRs = totalPersonalPRs
+        fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2))
+        console.log("SUCCESS: Personal PRs Data written.")
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const fetchAndCachePersonalPRDetails = async () => {
+    try {
+        const repos = await fetchRepos()
+        let totalPersonalPRs = 0
+        for (let repo of repos) {
+            const response = await axios.get(`https://api.github.com/repos/${username}/${repo.name}/pulls?state=all`, { headers: { 'Authorization': `token ${token}` } })
+            totalPersonalPRs += response.data.length
+        }
+        let existingData = {}
+        if (fs.existsSync(filePath)) {
+            existingData = JSON.parse(fs.readFileSync(filePath))
+        }
+        existingData.totalPersonalPRs = totalPersonalPRs
+        fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2))
+        console.log("SUCCESS: Personal PRs Data written.")
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const fetchPRDetails = async(user, repos) => {
+    try {
+        let count = 0
+        for (let repo of repos) {
+            const response = await axios.get(`https://api.github.com/repos/${user}/${repo.name}/pulls?state=all`, { headers: { 'Authorization': `token ${token}` } })
+            count = response.data.length
+        }
+        console.log("SUCCESS: Personal PRs Data written.")
+        return count
     } catch (error) {
         console.log(error)
     }
@@ -61,5 +133,6 @@ app.get('/api', async (req, resp) => {
 
 app.listen(8080, () => {
     fetchAndCacheLanguages()
+    fetchOrgs()
     console.log("Listening at port 8080")
 })
