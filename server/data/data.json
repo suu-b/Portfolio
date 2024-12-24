@@ -1,11 +1,16 @@
 {
-  "HTML": 654515,
-  "CSS": 157731,
-  "JavaScript": 2315961,
-  "Scala": 74501,
-  "Java": 21002,
-  "Assembly": 172737,
-  "Scilab": 1812,
-  "Shell": 3591,
-  "C++": 4251
+  "languages": {
+    "HTML": 654515,
+    "CSS": 157731,
+    "JavaScript": 2318343,
+    "Scala": 74501,
+    "Java": 21002,
+    "Assembly": 172737,
+    "Scilab": 1812,
+    "Shell": 3591,
+    "C++": 4251
+  },
+  "personalPRs": 14,
+  "orgsPRs": 68,
+  "totalPRs": 82
 }
