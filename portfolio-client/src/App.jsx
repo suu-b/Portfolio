@@ -1,6 +1,7 @@
 import Projects from "./sections/Projects"
 import React, { useState } from "react"
 import profileImage from "/assets/profile.jpg"
+import gradCap from "/assets/grad-cap.png"
 import Introduction from "./sections/Introduction"
 import Skills from "./sections/Skills"
 import Contacts from "./sections/Contacts"
@@ -12,8 +13,11 @@ function App() {
   return (
     <div className="bg-slate-100 dark:bg-slate-800 flex flex-col justify-center items-center p-3 lg:py-8">
       <DarkModeToggle />
-      <img src={profileImage} className="w-52 lg:w-40 rounded-full lg:mt-0 lg:absolute top-10" alt="profile-image" />
-      <div className="w-[90vw] mt-10 lg:mt-28 lg:w-[50vw] p-5 lg:p-8 dark:bg-gray-900 bg-white shadow rounded-xl lg:pt-20">
+      <div className="lg:absolute top-5 flex flex-col items-center justify-between">
+        <img src={gradCap} className="animate-bounce w-32 lg:w-28 rounded-full lg:mt-0 top-0" alt="profile-image" />
+        <img src={profileImage} className="w-52 lg:w-44  rounded-full" alt="profile-image" />
+      </div>
+      <div className="w-[90vw] mt-10 lg:mt-40 lg:w-[50vw] p-5 lg:p-8 dark:bg-gray-900 bg-white shadow rounded-xl lg:pt-20">
         <Introduction />
         <hr className="my-5 border-slate-300 dark:border-slate-600" />
         <Skills />
