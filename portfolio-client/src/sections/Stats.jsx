@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { LanguageStats } from "../components/LanguageStats"
 import { PRStats } from "../components/PRStats"
+import { FadeLoader } from "react-spinners"
 
 export function Stats() {
     const [stats, setStats] = useState({})
@@ -20,11 +21,11 @@ export function Stats() {
             <div className="flex flex-col lg:flex-row justify-between ">
                 <div className="lg:w-[45%] dark:bg-black bg-white border dark:border-black rounded shadow px-5 py-2">
                     <h3 className="font-bold text-lg text-slate-700 dark:text-slate-300 ml-2">Languages</h3>
-                    {stats.languages && <LanguageStats data={stats.languages} />}
+                    {stats.languages ? <LanguageStats data={stats.languages} /> : <FadeLoader color="gray" className="w-[20%] my-3 mx-auto"/>}
                 </div>
                 <div className="lg:w-[45%] dark:bg-black bg-white border dark:border-black rounded shadow px-5 py-2">
                     <h3 className="font-bold text-lg text-slate-700 dark:text-slate-300 ml-2">Total Pull Requests: {stats.totalPRs}</h3>
-                    {(stats.personalPRs && stats.orgsPRs) && <PRStats data={{"Personal": stats.personalPRs, "Organizations": stats.orgsPRs}} />}
+                    {(stats.personalPRs && stats.orgsPRs) ? <PRStats data={{ "Personal": stats.personalPRs, "Organizations": stats.orgsPRs }} /> :  <FadeLoader color="gray" className="w-[20%] my-3 mx-auto"/>}
                 </div>
             </div>
         </section>

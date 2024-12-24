@@ -4,8 +4,8 @@ import { IoCodeSlash } from "react-icons/io5";
 
 export default function ProjectCard({ imageSrc, projectName, projectDescription, techStack, liveLink, repoLink }) {
     return (
-        <div className="bg-white dark:bg-black mb-8 mx-auto border border-slate-300 dark:border-slate-900 border-2 rounded-lg shadow-lg p-5">
-            <div className="border border-slate-300 dark:border-slate-900 border-2 rounded-lg shadow dark:shadow-xl p-3 lg:w-[90%] mx-auto">
+        <div className="bg-white dark:bg-black mb-8 mx-auto border border-slate-300 dark:border-slate-900 border-2 rounded-lg shadow-lg p-3 lg:p-5">
+            <div className="border border-slate-300 dark:border-slate-900 border-2 rounded-lg shadow dark:shadow-xl lg:p-3 lg:w-[90%] mx-auto">
                 <img src={imageSrc} alt={projectName} className="rounded mx-auto" />
             </div>
             <h3 className="font-bold text-slate-800 mt-2 lg:mt-0 lg:text-base text-sm dark:text-slate-200">{projectName}</h3>

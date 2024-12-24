@@ -15,7 +15,7 @@ function App() {
       <DarkModeToggle />
       <div className="lg:absolute top-5 flex flex-col items-center justify-between">
         <img src={gradCap} className="animate-bounce w-32 lg:w-28 rounded-full lg:mt-0 top-0" alt="profile-image" />
-        <img src={profileImage} className="w-52 lg:w-44  rounded-full" alt="profile-image" />
+        <img src={profileImage} className="w-52 lg:w-44 shadow border dark:border-slate-900 rounded-full" alt="profile-image" />
       </div>
       <div className="w-[90vw] mt-10 lg:mt-40 lg:w-[50vw] p-5 lg:p-8 dark:bg-gray-900 bg-white shadow rounded-xl lg:pt-20">
         <Introduction />
