@@ -142,6 +142,11 @@ app.get('/api', async (req, resp) => {
     }
 });
 
+const weeklyJob = nodeScheduler.scheduleJob('0 1 * * 0', async () => {
+    await fetchAndCacheLanguages()
+    await fetchAndCachePRDetails()
+    console.log("SUCCESS: Schedule job executed for the week.")
+})
 
 app.listen(8080, () => {
     console.log("Listening at port 8080")
