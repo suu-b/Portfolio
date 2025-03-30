@@ -15,6 +15,7 @@ import Timeline from "./components/index/Timeline"
 import NotFound from "./components/NotFound"
 import Future from "./components/index/Future"
 import Now from "./components/Now"
+import Design from "./components/articles/Design";
 
 export default function App() {
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/timeline" element={< Timeline/>} />
             <Route path="/future" element={< Future/>} />
             <Route path="/now" element={< Now/>} />
+            <Route path="/design" element={< Design/>} />
             <Route path="*" element={<NotFound/>}/>
           </Routes>
           {<img src={border} alt="border" className="w-[20%] my-5" />}

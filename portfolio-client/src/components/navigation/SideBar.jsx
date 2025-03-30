@@ -31,7 +31,7 @@ export default function SideBar({ isOpen, onClose }) {
                 </div>
                 <nav className="flex flex-col p-5 text-center gap-3 w-full text-slate-300 text-xl max-h-[70%] overflow-y-auto">
                     <Link to="/" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/home</Link>
-                    <Link to="/technology" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/technology</Link>
+                    <Link to="/design" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/design-philosophy</Link>
                     <Link to="/now" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/now</Link>
                     <Link to="/future" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/future</Link>
                     <Link to="/timeline" className="hover:bg-slate-800 hover:text-slate-100 rounded p-5" onClick={onClose}>/timeline</Link>

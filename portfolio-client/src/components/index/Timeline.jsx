@@ -9,6 +9,7 @@ export default function Timeline() {
                 <ol className="text-slate-300 text-lg  my-5 text-justify">
                     <li className="my-3"><span className="italic font-light">January 2025:</span> v1 was deployed. It all happened when I decided to create the portfolio summarizing my technical skills, status, projects and contact info. It was typical, minimalistic, full-stack dev portfolio with nothing interesting.</li>
                     <li className="my-3"><span className="italic font-light">22 March 2025:</span> v2 was ideated. I was surfing youtube when I ended up somewhere. It inspired me to make the site a preface (not portfolio).</li>
+                    <li className="my-3"><span className="italic font-light">30 March 2025:</span> v2 was deployed on netlify.</li>
                 </ol>
             </div>
         </section>
