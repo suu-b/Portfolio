@@ -12,7 +12,7 @@ export default function Contents() {
 
     const cards = [
         { title: "Technology", description: "A sum of Computer Science and Software Engineering" },
-        { title: "Artificial Intelligence", description: "[Under Development] Artifical Intelligence, though could've been covered in Technology, for me it deserves a whole section." },
+        { title: "Artificial Intelligence", description: "Artifical Intelligence, though could've been covered in Technology, for me it deserves a whole section." },
         { title: "Philosophy", description: "The urgent need of philosophers for the modern world. My reflection." },
         { title: "Mythology", description: "A sum of myths and why I love them." },
         { title: "Learning", description: "[Under Development] Probably an extension of epistemology subsection of philosophy." },
