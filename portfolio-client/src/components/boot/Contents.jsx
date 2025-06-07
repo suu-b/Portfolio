@@ -32,7 +32,7 @@ export default function Contents() {
             <p className="text-xl font-light text-justify mb-5">{introText3}</p>
             <img src={border} alt="border" className="w-[40%] my-5" />
             <p className="text-xl font-light text-justify mb-5">{interestText}</p>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="flex flex-wrap justify-center gap-5 mt-5 mb-8">
                 {cards.map((card, index) => (
                     <Link
                         to={`/${card.title.toLowerCase().replace(" ", "-")}`}
