@@ -11,6 +11,7 @@ export default function Timeline() {
                     <li className="my-3"><span className="italic font-light">22 March 2025:</span> v2 was ideated. I was surfing youtube when I ended up somewhere. It inspired me to make the site a preface (not portfolio).</li>
                     <li className="my-3"><span className="italic font-light">30 March 2025:</span> v2 was deployed on netlify.</li>
                     <li className="my-3"><span className="italic font-light">31 March 2025:</span> AI page rolled out.</li>
+                    <li className="my-3"><span className="italic font-light">8 Jun 2025:</span> Substack articles section rolled out.</li>
                 </ol>
             </div>
         </section>
