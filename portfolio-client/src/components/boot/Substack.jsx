@@ -32,7 +32,7 @@ export default function Substack() {
           <h1 className="text-2xl font-bold text-slate-300 text-center mb-8">
             Some of my recent articles
           </h1>
-
+           <p className="text-xl font-light text-justify mt-3 mb-10">Following are some of my latest articles on Substack. They're totally non-technical dealing with philosophy, art, and literature. If these topics click your interest, do give them a read: </p>
           <div className="bg-black border border-neutral-800 rounded-2xl shadow-md p-6 space-y-6">
             {substackArticles.map((article, index) => (
               <div key={index} className="text-white">
