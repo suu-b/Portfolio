@@ -17,7 +17,6 @@ export default function Future() {
                     <li className="my-3">Miscellaneous</li>
                     <li className="my-3">A section dedicated to some things that appear quite tedious to me.</li>
                     <li className="my-3">Connecting the site to the CMS service to push some articles here.</li>
-                    <li className="my-3">Dedicated articles section here.</li>
                 </ol>
             </div>
         </section>
