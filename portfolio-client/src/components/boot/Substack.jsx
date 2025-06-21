@@ -9,9 +9,8 @@ export default function Substack() {
   useEffect(() => {
     const fetchSubstackFeed = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/substack`);
-        setSubstackArticles(response.data.slice(0, 3));
-        console.log(response.data);
+        const response = await axios.get(`/substack`);
+        setSubstackArticles(response.data.simplified.slice(0, 3));
       } catch (e) {
         console.error("Error fetching Substack RSS feed:", e);
       }

@@ -1,4 +1,13 @@
+[functions]
+directory = "netlify/functions"
+
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/substack"
+  to = "/.netlify/functions/fetchArticles"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
