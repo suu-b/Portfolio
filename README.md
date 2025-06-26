@@ -1,0 +1,1 @@
+This site is about me, my ideas, and my pursuits. It is neither a commercial website to attract traffic or a presentation to please someone. Instead, an introduction to me. Therefore, perhaps it should rather be called as a preface than a portfolio.
