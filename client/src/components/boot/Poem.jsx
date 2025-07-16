@@ -10,30 +10,39 @@ const Poem = () => {
       <img src={border} alt="border" className="w-[40%] mb-6" />
 
       <div className="w-full">
-        <div className="text-center space-y-8">
-          <blockquote className="text-lg font-light italic text-slate-200 leading-relaxed max-w-4xl mx-auto">
-            Here Captain! dear father! <br />
-            This arm beneath your head! <br />
-            It is some dream that on the deck, <br />
-            You’ve fallen cold and dead.
-          </blockquote>
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          {/* Quote Section */}
+          <div className="order-2 md:order-1">
+            <blockquote className="text-xl md:text-2xl font-light italic text-slate-200 leading-relaxed">
+              "Here Captain! dear father! <br />
+              This arm beneath your head! <br />
+              It is some dream that on the deck, <br />
+              You've fallen cold and dead."
+            </blockquote>
+          </div>
 
-          <div className="w-24 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent mx-auto"></div>
+          {/* Attribution Section */}
+          <div className="order-1 md:order-2 space-y-4">
+            <div className="w-16 h-px bg-gradient-to-r from-slate-400 to-transparent md:mx-0 mx-auto"></div>
 
-          <div className="space-y-3">
-            <h2 className="text-xl font-medium text-slate-300">from:</h2>
-            <h3 className="text-xl text-white">
-              <a
-                href="https://www.poetryfoundation.org/poems/45474/o-captain-my-captain"
-                className="text-white underline"
-                target="_blank"
-              >
-                O Captain! My Captain!
-              </a>
-            </h3>
-            <p className="text-lg text-gray-400 italic font-light">
-              BY <u>Walt Whitman</u>
-            </p>
+            <div className="space-y-3 text-center md:text-left">
+              <h2 className="text-lg font-medium text-slate-400 uppercase tracking-wider">
+                from:
+              </h2>
+              <h3 className="text-2xl font-semibold text-white">
+                <a
+                  href="https://www.poetryfoundation.org/poems/45474/o-captain-my-captain"
+                  className="text-white hover:text-slate-300 transition-colors duration-200 underline decoration-slate-500 hover:decoration-slate-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  O Captain! My Captain!
+                </a>
+              </h3>
+              <p className="text-lg text-gray-400 italic font-light">
+                BY <span className="text-slate-300 font-medium">Walt Whitman</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
