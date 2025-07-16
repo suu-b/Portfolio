@@ -1,4 +1,3 @@
-import Loader from "./Loader";
 import Introduction from "./Introduction";
 import Contents from "./Contents";
 import Substack from "./Substack";
@@ -9,7 +8,6 @@ export default function LandingPage() {
         <section id="landing-page">
             <Introduction />
             <Contents />
-            <Poem />
             <Substack />
         </section>
     );
