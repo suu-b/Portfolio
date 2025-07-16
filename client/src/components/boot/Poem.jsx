@@ -14,25 +14,25 @@ const Poem = () => {
           A Poem to Inspire
         </h1>
 
-        <div className="bg-black border border-neutral-800 rounded-2xl shadow-md p-6">
-          <div className="text-white text-center">
-            <blockquote className="text-lg md:text-xl font-light italic text-slate-200 mb-6 leading-relaxed">
-              "O Captain! my Captain! our fearful trip is done,
-              <br />
-              The ship has weather'd every rack, the prize we sought is won."
-            </blockquote>
+        <div className="text-center space-y-8">
+          <blockquote className="text-2xl md:text-3xl font-light italic text-slate-200 leading-relaxed max-w-4xl mx-auto">
+            "O Captain! my Captain! our fearful trip is done,
+            <br />
+            The ship has weather'd every rack, the prize we sought is won."
+          </blockquote>
 
-            <hr className="border-t border-neutral-700 my-6" />
+          <div className="w-24 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent mx-auto"></div>
 
-            <div className="text-left">
-              <h2 className="text-xl font-semibold text-slate-300 mb-4">
-                I recommend you to read:
-              </h2>
-              <h3 className="text-lg font-medium text-white mb-2">
-                O Captain!
-              </h3>
-              <p className="text-base text-gray-400 italic">Walt Whitman</p>
-            </div>
+          <div className="space-y-3">
+            <h2 className="text-xl font-medium text-slate-300">
+              I recommend you to read:
+            </h2>
+            <h3 className="text-2xl font-semibold text-white">
+              O Captain!
+            </h3>
+            <p className="text-lg text-gray-400 italic font-light">
+              Walt Whitman
+            </p>
           </div>
         </div>
       </div>
